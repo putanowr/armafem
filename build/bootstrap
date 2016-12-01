@@ -1,0 +1,7 @@
+#!/bin/bash
+
+hname=`hostname`
+
+echo "Bootstraping for host: ${hname}"
+
+cmake ../ 

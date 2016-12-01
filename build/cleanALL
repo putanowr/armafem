@@ -1,0 +1,3 @@
+#!/bin/bash
+rm -fr CMakeCache.txt CMakeFiles src doc Makefile cmake_install.cmake
+rm -rf catch CTestTestfile.cmake Testing tests
