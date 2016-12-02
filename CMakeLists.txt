@@ -17,6 +17,7 @@ find_package(Armadillo REQUIRED)
 
 add_subdirectory(src)
 add_subdirectory(tests)
+add_subdirectory(examples)
 
 #include_directories(${ARMADILLO_INCLUDE_DIRS})
 #add_executable(armasample01 armasample01.cpp)
