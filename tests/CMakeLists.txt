@@ -25,8 +25,9 @@ add_dependencies(CatchLib catch)
 include_directories(${CATCH_INCLUDE_DIR} ${PROJECT_SOURCE_DIR}/src)
 add_executable (armafemtest testmain.cpp
                             test_assem.cpp
-                            test_smoke.cpp)
+                            test_smoke.cpp
+                            test_solveq.cpp)
 
-target_link_libraries(armafemtest CatchLib)
+target_link_libraries(armafemtest CatchLib armafem)
 
 add_test(NAME ArmaFemTest COMMAND armafemtest)
