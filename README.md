@@ -1,4 +1,4 @@
-# ArmaFEM: an Armadillo based C++ variation of Calfem library
+# ArmaFEM: an Armadillo based C++ variation of CALFEM library
 
 ## The ArmaFEM C++ library
 
@@ -7,6 +7,9 @@
 The purpose of ArmaFEM is to illustrate use of Armadillo linear algebra library
 in a context of writing simple Finite Element Method programs.
 
+#### CALFEM
+
+The original Matlab code of CALFEM can be accessed here https://github.com/CALFEM/calfem-matlab
 
 ### Licence
 
