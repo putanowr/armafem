@@ -14,6 +14,7 @@ set(CMAKE_INCLUDE_PATH ${CMAKE_LIBRARY_PATH} ${INC_PATHS})
 enable_testing(true)  # Enables unit-testing.
 
 find_package(Armadillo REQUIRED)
+find_package(Boost COMPONENTS system filesystem REQUIRED)
 
 add_subdirectory(src)
 add_subdirectory(tests)
