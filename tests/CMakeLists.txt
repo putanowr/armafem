@@ -25,6 +25,7 @@ add_dependencies(CatchLib catch)
 include_directories(${CATCH_INCLUDE_DIR} ${PROJECT_SOURCE_DIR}/src)
 add_executable (armafemtest testmain.cpp
                             test_assem.cpp
+                            test_bar1.cpp
                             test_smoke.cpp
                             test_solveq.cpp)
 
