@@ -22,7 +22,7 @@ add_library(CatchLib INTERFACE)
 target_include_directories(CatchLib INTERFACE ${CATCH_INCLUDE_DIR})
 add_dependencies(CatchLib catch)
 
-include_directories(${CATCH_INCLUDE_DIR} ${PROJECT_SOURCE_DIR}/src)
+include_directories(${CATCH_INCLUDE_DIR} ${PROJECT_SOURCE_DIR}/src/fem)
 add_executable (armafemtest testmain.cpp
                             test_assem.cpp
                             test_bar1.cpp
