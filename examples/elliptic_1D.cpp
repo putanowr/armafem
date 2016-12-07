@@ -1,8 +1,11 @@
-#include "bar1e.h"
-#include "assem.h"
-#include "solveq.h"
+#include "fem/bar1e.h"
+#include "fem/assem.h"
+#include "fem/solveq.h"
+#include "io/vtk/vtkExporter.h"
+#include "io/gnuplot/gnuplotExporter.h"
 
 #include <iostream>
+#include <fstream>
 
 using namespace arma;
 using namespace armafem;
@@ -50,7 +53,12 @@ int main(int arg, char *argv[]) {
   results(span::all, 2) = x;
   results(span::all, 2).transform([](double x){ return -2*x*x+5*x+2;});
   
+  auto vtk = VtkExporter("elliptic.vtk");
+  vtk.exportBar1(x, edof, nullptr, nullptr);
 
+  auto gnuplot = GnuplotExporter("elliptic.gpt");
+  auto nodalFields = armafem::FieldsTable{{"value", u}};
+  gnuplot.exportBar1(x,edof, &nodalFields);
   std::cout << results << "\n";
   return 0;
 }

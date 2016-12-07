@@ -1,6 +1,6 @@
-#include "beam2e.h"
-#include "assem.h"
-#include "solveq.h"
+#include "fem/beam2e.h"
+#include "fem/assem.h"
+#include "fem/solveq.h"
 
 #include <iostream>
 
