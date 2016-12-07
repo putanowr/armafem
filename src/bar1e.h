@@ -1,10 +1,4 @@
-//! PURPOSE
-//!  Compute element stiffness matrix
-//!  for spring (analog) element.
-//!
-//! INPUT:  ep = [k];       spring stiffness or analog quantity.
-//!
-//! OUTPUT: Ke :            stiffness matrix, dim(Ke)= 2 x 2
+#pragma once
 
 #include <armadillo>
 
