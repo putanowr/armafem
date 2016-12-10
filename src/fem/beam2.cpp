@@ -1,4 +1,4 @@
-#include "beam2e.h"
+#include "beam2.h"
 
 using namespace arma;
 

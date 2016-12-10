@@ -1,4 +1,4 @@
-#include "fem/beam2e.h"
+#include "fem/beam2.h"
 #include "fem/assem.h"
 #include "fem/solveq.h"
 
